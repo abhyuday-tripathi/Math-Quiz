@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="gamePage.css" />
+    <title>The Math Quiz | Game Page</title>
+  </head>
+  <style>
+    #player1Name,
+    #player2Name {
+      display: inline-block;
+      margin-left: 30px;
+    }
+  </style>
+  <body>
+    <h4 id="player1_name"></h4>
+    <span id="player1_score"></span>
+    <br />
+    <h4 id="player2_name"></h4>
+    <span id="player2_score"></span>
+    <div class="container">
+      <center>
+        <h1>The Math Quiz | Game Page</h1>
+        <h2 id="questionTurn"></h2>
+        <h2 id="answerTurn"></h2>
+        <div id="output" class="output col-lg-7"></div>
+        <div class="inputs">
+          <label for="name2">Number 1 :</label>
+          <br />
+          <input type="number" class="form-control col-lg-12" id="num1" />
+          <label for="name3">Number 2 :</label>
+          <br />
+          <input type="number" name="name3" class="form-control" id="num2" />
+          <button onclick="send();" class="btn btn-success">Submit</button>
+        </div>
+      </center>
+    </div>
+    <script src="gamePage.js"></script>
+  </body>
+</html>
