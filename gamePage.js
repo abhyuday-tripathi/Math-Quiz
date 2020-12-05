@@ -1,12 +1,9 @@
+nameplayer1 = document.getElementById("userName").value;
+nameplayer2 = document.getElementById("userName2").value;
+
 function addUser() {
-  name1 = localStorage.setItem(
-    "player1_name",
-    document.getElementById("userName").value;
-  );
-    name2 = localStorage.setItem(
-    "player2_name",
-    document.getElementById("userName2").value;
-  );
+  name1 = localStorage.setItem("player1_name", nameplayer1);
+  name2 = localStorage.setItem("player2_name", nameplayer2);
 }
 
 player1_name = localStorage.getItem("player1_name");
