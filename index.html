@@ -3,44 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css" />
-    <title>The Math Quiz</title>
+    <title>Guess The Word</title>
   </head>
   <body>
     <center>
-      <h1
-        style="
-          margin-top: 50px;
-          font-size: 45px;
-          font-family: 'Poppins', sans-serif;
-        "
-      >
-        The Math Quiz
-      </h1>
-      <div class="box">
-        <h1>Login Player 1</h1>
-        <input
-          type="text"
-          placeholder="Username"
-          id="userName"
-          autocomplete="off"
-        />
-        <h1>Login Player 2</h1>
-        <input
-          type="text"
-          placeholder="Username"
-          id="userName2"
-          autocomplete="off"
-        />
-        <button onclick="addUser();" id="btn1">Login</button>
+      <h1>Guess The Word</h1>
+      <div class="container col-lg-4 col-sm-8 col-xs-11">
+        <h2>Player 1 Name:</h2>
+        <input type="text" id="player1" class="form-control" />
       </div>
+      <div class="container col-lg-4 col-sm-8 col-xs-11">
+        <h2>Player 2 Name:</h2>
+        <input type="text" id="player2" class="form-control" />
+      </div>
+      <button onclick="addUser();">Login</button>
     </center>
-    <script src="gamePage.js"></script>
+    <script src="gameLogin.js"></script>
   </body>
 </html>

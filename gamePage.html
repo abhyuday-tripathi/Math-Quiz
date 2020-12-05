@@ -1,61 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
-      rel="stylesheet"
-    />
+    <title>Guess The Word</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.css"
-    ></script>
-    <link rel="stylesheet" href="gamePage.css" />
-    <title>The Math Quiz | Game Page</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h2 id="player1Name"><span id="player1Score"></span></h2>
-    <h2 id="player2Name"><span id="player2Score"></span></h2>
+    <h4 id="player1_name"></h4>
+    <span id="player1_score"></span> <br />
+    <h4 id="player2_name"></h4>
+    <span id="player2_score"></span>
     <div class="container">
       <center>
-        <h1>The Math Quiz | Game Page</h1>
-        <h2 id="questionTurn"></h2>
-        <h2 id="answerTurn"></h2>
-        <div class="box col-lg-7">
-          <br />
-          <br />
-          <h4 id="question"></h4>
-          <br />
-          <label for="name" class="label">Answer :</label>
-          <input
-            type="number"
-            name="name"
-            id="answer"
-            class="form-control"
-            placeholder="Enter Your Answer"
-            autocomplete="off"
-          />
-          <br />
-          <button class="btn btn-info">Check</button>
+        <h2 style="color: white">Guess The Word!</h2>
+        <h3 id="player_question"></h3>
+        <h3 id="player_answer"></h3>
+        <div id="output" class="col-lg-6"></div>
+        <br />
+        <br />
+        <input type="text" id="word" class="form-control" placeholder="Word" />
+        <br />
+        <div class="div1">
+          <label
+            >Send Your Word:
+            <b style="color: red"
+              >Try putting a word which has 5 or more alphabets
+            </b>
+          </label>
         </div>
-        <div class="inputs">
-          <label for="name2">Number 1 :</label>
-          <br />
-          <input type="number" class="form-control col-lg-12" />
-          <label for="name3">Number 2 :</label>
-          <br />
-          <input type="number" name="name3" class="form-control" />
-          <button class="btn btn-success">Submit</button>
-        </div>
+        <button onclick="send()" class="btn btn-success" style="width: 30%">
+          Send
+        </button>
       </center>
     </div>
     <script src="gamePage.js"></script>
+    <script src="gameLogin.js"></script>
   </body>
 </html>
